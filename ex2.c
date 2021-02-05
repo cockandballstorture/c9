@@ -4,7 +4,7 @@
 int find(char a){
 	char v[30]={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
 	int i;
-	for (i=0;i<25;i++){
+	for (i=0;i<26;i++){
 		if(a==v[i]){
 			return(i);
 		}
@@ -18,7 +18,7 @@ char cz(char a,int w){
 		}
 	else{
 		 a=find(a)+w;
-		 a=a%25;
+		 a=a%26;
 		 a=v[a];
 		}
 	return(a);
