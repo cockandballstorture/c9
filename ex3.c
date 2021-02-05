@@ -18,7 +18,7 @@ char cz(char a,int w){
 		}
 	else{
 		 a=find(a)+w;
-		 a=a%25;
+		 a=a%26;
 		 a=v[a];
 		}
 	return(a);
