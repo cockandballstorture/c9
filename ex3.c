@@ -17,7 +17,7 @@ char cz(char a,int w){
 		a=a+w;
 		}
 	else{
-		 a=find(a)+w;
+		 a=find(a)-w;
 		 a=a%26;
 		 a=v[a];
 		}
@@ -40,6 +40,8 @@ void main(void) {
 	for (i=0;i<q;i++){
 		x[i]=cz(x[i],w);
 	}
+	fclose(f);
+	f=fopen("C:n.txt","r");
 	fprintf(f, "%s",x);
 	fclose(f);
 }
