@@ -41,7 +41,7 @@ void main(void) {
 		x[i]=cz(x[i],w);
 	}
 	fclose(f);
-	f=fopen("C:n.txt","r");
+	f=fopen("C:n.txt","w");
 	fprintf(f, "%s",x);
 	fclose(f);
 }
